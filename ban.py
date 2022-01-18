@@ -1,4 +1,4 @@
-from time import time
+import time
 import vk_api
 from threading import Thread
 from vk_api.utils import get_random_id
