@@ -14,7 +14,7 @@ class Bot(Thread):
 
     def run(self):
         vk_session = vk_api.VkApi(token=self.token)
-        longpoll = VkBotLongPoll(vk_session, self.ID)
+        longpoll = VkBotLongPoll(vk_session, self.id)
         vk = vk_session.get_api()
 
         def send_message(chat_id, message=None):
