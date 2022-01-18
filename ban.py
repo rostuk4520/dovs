@@ -41,8 +41,8 @@ class Bot(Thread):
                                               owner_id=id_user)
                                 send_message(
                                     chat_id, f'[id{id_user}|Пользователь] забанен нахой.')
-            except:
-                pass
+            except Exception as e:
+                print(e)
 
 
 bot = Bot(
